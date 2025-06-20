@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sihle Mrulwa - Professional Full Stack Developer and AWS Cloud Practitioner Consultant based in Johannesburg, South Africa. Specializing in custom web applications and cloud solutions.">
-    <meta name="keywords" content="Full Stack Developer, AWS Cloud Practitioner, Web Development, Cloud Consulting, Johannesburg, South Africa">
+    <meta name="description" content="Sihle Mrulwa - Professional Full Stack Developer and AWS Cloud Practitioner based in Johannesburg, South Africa. Specializing in scalable web and mobile applications.">
+    <meta name="keywords" content="Full Stack Developer, AWS Cloud Practitioner, Web Development, Mobile Development, Cloud Solutions, Johannesburg, South Africa">
     <meta name="author" content="Sihle Mrulwa">
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Sihle Mrulwa - Full Stack Developer & Cloud Consultant">
-    <meta property="og:description" content="Explore my portfolio of custom web applications and cloud solutions. Contact me for your next project!">
-    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
-    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:title" content="Sihle Mrulwa - Full Stack Developer & Cloud Practitioner">
+    <meta property="og:description" content="Explore my portfolio of scalable web and mobile applications built with C#, Java, Angular, and AWS. Contact me for your next project!">
+    <meta property="og:image" content="https://sihlemrulwa.dev/images/og-image.jpg">
+    <meta property="og:url" content="https://sihlemrulwa.dev">
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sihle Mrulwa - Full Stack Developer & Cloud Consultant">
-    <meta name="twitter:description" content="Explore my portfolio of custom web applications and cloud solutions.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta name="twitter:title" content="Sihle Mrulwa - Full Stack Developer & Cloud Practitioner">
+    <meta name="twitter:description" content="Explore my portfolio of scalable web and mobile applications.">
+    <meta name="twitter:image" content="https://sihlemrulwa.dev/images/og-image.jpg">
     <!-- Favicon and Manifest -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
-    <title>Sihle Mrulwa - Full Stack Developer & Cloud Consultant</title>
+    <title>Sihle Mrulwa - Full Stack Developer & Cloud Practitioner</title>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -122,6 +122,7 @@
         .mobile-menu {
             display: none;
             background: none;
+ Triad
             border: none;
             font-size: 1.5rem;
             color: var(--text);
@@ -137,7 +138,7 @@
             background: var(--white);
             list-style: none;
             padding: 1rem 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0,  regardless of the theme
             z-index: 999;
         }
 
@@ -333,6 +334,11 @@
             background: var(--background);
         }
 
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -424,7 +430,7 @@
 
         .systems-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
 
@@ -442,15 +448,38 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
-        .system-card i {
-            font-size: 2.5rem;
-            color: var(--primary);
+        .system-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
             margin-bottom: 1rem;
         }
 
         .system-card h4 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
+        }
+
+        .system-card p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .system-card .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .system-card .tech-stack span {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
         }
 
         .skills {
@@ -493,6 +522,12 @@
 
         .education {
             background: var(--white);
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
         .education-card {
@@ -659,6 +694,10 @@
             .timeline-item {
                 margin-left: 1.5rem;
             }
+
+            .systems-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -670,24 +709,24 @@
                 <li><a href="#home" aria-current="page">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#systems">Systems</a></li>
+                <li><a href="#systems">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="theme-toggle" aria-label="Toggle dark mode">
                 <i class="fas fa-moon"></i>
-            </button>
-            <button class="mobile-menu" aria-label="Toggle mobile menu">
+            </ ROS
+            button class="mobile-menu" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="mobile-nav-links" role="menu">
                 <li><a href="#home" role="menuitem">Home</a></li>
                 <li><a href="#about" role="menuitem">About</a></li>
                 <li><a href="#experience" role="menuitem">Experience</a></li>
-                <li><a href="#systems" role="menuitem">Systems</a></li>
+                <li><a href="#systems" role="menuitem">Projects</a></li>
                 <li><a href="#skills" role="menuitem">Skills</a></li>
-                <li><a href="#education" role="menuitem">Education</a></li>
+                <li><a  href="#education" role="menuitem">Education</a></li>
                 <li><a href="#contact" role="menuitem">Contact</a></li>
             </ul>
         </div>
@@ -696,14 +735,14 @@
     <section id="home" class="hero" role="banner">
         <div class="hero-content">
             <h1>Sihle Mrulwa</h1>
-            <p class="subtitle">Full Stack Developer | AWS Cloud Practitioner Consultant & Trainer</p>
+            <p class="subtitle">Full Stack Developer | AWS Cloud Practitioner</p>
             <p class="description">
-                I craft custom web applications and cloud solutions to drive business growth. As an AWS Certified Trainer, I empower teams with cloud expertise. Specializing in recruitment platforms, booking systems, and more.
+                Passionate Full Stack Developer with over two years of experience crafting innovative web and mobile applications. Expert in C#, Java, JavaScript, and AWS, delivering scalable, high-performance solutions that drive success. Excelling in dynamic, collaborative environments with a focus on cloud solutions and software development.
             </p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#systems" class="btn btn-secondary">View My Systems</a>
-                <a href="/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                <a href="#systems" class="btn btn-secondary">View My Projects</a>
+                <a href="/MyDocs/SihleMrulwaResume.pdf" class="btn btn-secondary" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -717,12 +756,12 @@
                 </div>
             </div>
             <div class="about-text">
-                <h3>Full Stack Developer & Cloud Consultant</h3>
+                <h3>Full Stack Developer & Cloud Practitioner</h3>
                 <p>
-                    I'm a passionate Full Stack Developer and AWS Cloud Practitioner Consultant based in Johannesburg. With a strong foundation in web development and cloud architecture, I deliver tailored solutions that meet business needs.
+                    I'm a results-driven Full Stack Developer based in Johannesburg, with over two years of experience in building innovative web and mobile applications. My expertise lies in C#, Java, JavaScript, and SQL Server, delivering scalable solutions that enhance user engagement and system performance.
                 </p>
                 <p>
-                    My expertise spans building scalable systems for recruitment, booking, and delivery services, combined with AWS cloud training to help clients leverage modern technologies.
+                    Passionate about cloud solutions, I hold certifications in AWS Cloud Practitioner and Cloud Administrator, enabling me to deploy and optimize applications on AWS. I thrive in collaborative environments, bringing creativity and technical excellence to every project. My interests include software development and exploring cutting-edge cloud technologies.
                 </p>
                 <div class="contact-info">
                     <div class="contact-item">
@@ -746,34 +785,128 @@
         <h2 class="section-title">Professional Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="job-title">Full Stack Engineer & AWS Trainer</div>
+                <div class="job-title">Full Stack Engineer & AWS Cloud Practitioner</div>
                 <div class="company">Forge Academy & Labs</div>
                 <div class="date-location">October 2024 - Present • Randburg</div>
                 <ul class="achievements">
-                    <li>Developed full-stack applications using Vue.js, Angular, and Spring Boot.</li>
-                    <li>Managed cloud deployments on AWS (EC2, S3, Lambda).</li>
-                    <li>Trained 50+ professionals in AWS Cloud Practitioner certification.</li>
+                    <li>Developed full-stack applications using Vue.js, Angular, C#, Java, and Spring Boot.</li>
+                    <li>Managed databases with PostgreSQL and SQL Server.</li>
+                    <li>Deployed applications on AWS (EC2, S3, Lambda, RDS), enhancing scalability.</li>
+                    <li>Optimized performance and implemented security enhancements.</li>
                 </ul>
             </div>
-            <!-- Add other timeline items similarly -->
+            <div class="timeline-item">
+                <div class="job-title">Full Stack Developer</div>
+                <div class="company">Digital Solution Foundry</div>
+                <div class="date-location">May 2024 - October 2024 • Johannesburg</div>
+                <ul class="achievements">
+                    <li>Developed and maintained 5+ high-performance applications using C#, Java, and SQL Server.</li>
+                    <li>Implemented 10+ APIs and CRUD functionalities, improving system reliability by 30%.</li>
+                    <li>Led mobile and web app development, increasing user engagement by 40%.</li>
+                    <li>Collaborated with a team of 8 developers, reducing bug resolution time by 20%.</li>
+                    <li>Delivered monthly system updates, reducing downtime by 15%.</li>
+                    <li>Streamlined workflows, cutting deployment time by 20%.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Android Developer Intern</div>
+                <div class="company">Absa Group Limited</div>
+                <div class="date-location">October 2023 - March 2024 • Johannesburg</div>
+                <ul class="achievements">
+                    <li>Designed and implemented 5+ key features for Android applications.</li>
+                    <li>Enhanced user experience, improving app ratings by 15%.</li>
+                    <li>Collaborated with 6+ developers to troubleshoot issues, reducing bug resolution time by 25%.</li>
+                    <li>Conducted performance testing, decreasing crash rates by 20%.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Software Developer</div>
+                <div class="company">Shaper</div>
+                <div class="date-location">March 2022 - September 2023 • Johannesburg</div>
+                <ul class="achievements">
+                    <li>Developed and optimized 4+ Android features, increasing user retention by 18%.</li>
+                    <li>Led Angular (TypeScript) web app development, reducing load times by 30%.</li>
+                    <li>Built backend systems with Java Spring Boot, scaling for 10,000+ daily users.</li>
+                    <li>Developed 3+ iOS apps with Swift, boosting downloads by 25% in 3 months.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Receptionist</div>
+                <div class="company">Galilee SPS</div>
+                <div class="date-location">August 2020 - January 2022 • Johannesburg</div>
+                <ul class="achievements">
+                    <li>Provided exceptional customer service to 50+ clients daily, improving satisfaction by 20%.</li>
+                    <li>Managed administrative tasks, increasing office efficiency by 15%.</li>
+                    <li>Enhanced team collaboration and productivity by 10%.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="systems" class="systems-built section">
-        <h2 class="section-title">Systems I Build</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="systems-filter">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="recruitment">Recruitment</button>
-            <button class="filter-btn" data-filter="booking">Booking</button>
-            <button class="filter-btn" data-filter="delivery">Delivery</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="cloud">Cloud Solutions</button>
         </div>
         <div class="systems-grid">
-            <div class="system-card" data-category="recruitment">
-                <i class="fas fa-users"></i>
-                <h4>Recruitment Systems</h4>
-                <p>Streamlined applicant tracking and hiring platforms.</p>
+            <div class="system-card" data-category="web">
+                <img src="images/web-app.jpg" alt="High-Performance Web Application">
+                <h4>High-Performance Web Application</h4>
+                <p>Developed a scalable web app with 10+ APIs, improving system reliability by 30% and operational efficiency by 25%.</p>
+                <div class="tech-stack">
+                    <span>C#</span>
+                    <span>Java</span>
+                    <span>SQL Server</span>
+                    <span>Angular</span>
+                </div>
+                <a href="https://github.com/SIRAMRULWA/web-app" class="btn btn-primary" target="_blank">View on GitHub</a>
             </div>
-            <!-- Add other system cards -->
+            <div class="system-card" data-category="mobile">
+                <img src="images/mobile-app.jpg" alt="Mobile Application">
+                <h4>Mobile Application</h4>
+                <p>Led development of a mobile app that increased user engagement by 40%.</p>
+                <div class="tech-stack">
+                    <span>Java</span>
+                    <span>Kotlin</span>
+                    <span>Swift</span>
+                </div>
+                <a href="https://github.com/SIRAMRULWA/mobile-app" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+            <div class="system-card" data-category="mobile">
+                <img src="images/android-app.jpg" alt="Android Banking App">
+                <h4>Android Banking App</h4>
+                <p>Implemented 5+ key features, improving app ratings by 15% and reducing crash rates by 20%.</p>
+                <div class="tech-stack">
+                    <span>Kotlin</span>
+                    <span>Java</span>
+                    <span>Android SDK</span>
+                </div>
+            </div>
+            <div class="system-card" data-category="mobile">
+                <img src="images/ios-app.jpg" alt="iOS Applications">
+                <h4>iOS Applications</h4>
+                <p>Developed 3+ iOS apps with Swift, boosting downloads by 25% in 3 months.</p>
+                <div class="tech-stack">
+                    <span>Swift</span>
+                    <span>iOS SDK</span>
+                </div>
+                <a href="https://github.com/SIRAMRULWA/ios-app" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+            <div class="system-card" data-category="cloud">
+                <img src="images/aws-deployment.jpg" alt="AWS Cloud Deployment">
+                <h4>AWS Cloud Deployment</h4>
+                <p>Deployed full-stack application on AWS, improving scalability and security.</p>
+                <div class="tech-stack">
+                    <span>AWS</span>
+                    <span>Vue.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Spring Boot</span>
+                </div>
+                <a href="https://github.com/SIRAMRULWA/aws-deployment" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -786,19 +919,54 @@
                     <span class="skill-tag">C#</span>
                     <span class="skill-tag">Java</span>
                     <span class="skill-tag">JavaScript</span>
-                    <!-- Add more -->
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Swift</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">SQL</span>
                 </div>
             </div>
-            <!-- Add other skill categories -->
+            <div class="skill-category">
+                <h4><i class="fas fa-cogs"></i> Frameworks & Technologies</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-database"></i> Databases</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">SQL Server</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4><i class="fas fa-tools"></i> Tools</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">IBM SPSS Statistics</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="education" class="education section">
         <h2 class="section-title">Education & Training</h2>
-        <div class="education-card">
-            <div class="degree">BSc Computer Science</div>
-            <div class="university">Walter Sisulu University</div>
-            <div class="date-location">2017 - 2020 • Mthatha</div>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="degree">BSc Computer Science</div>
+                <div class="university">Walter Sisulu University</div>
+                <div class="date-location">2017 - 2020 • Mthatha, South Africa</div>
+            </div>
+            <div class="education-card">
+                <div class="degree">Cloud Administrator & Cloud Practitioner</div>
+                <div class="university">Forge Academy</div>
+                <div class="date-location">Randburg</div>
+            </div>
         </div>
     </section>
 
@@ -811,13 +979,22 @@
                 <h4>Phone</h4>
                 <p>+27 83 623 6469</p>
             </div>
-            <!-- Add other contact cards -->
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>mrulwasihle@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Location</h4>
+                <p>Johannesburg, South Africa</p>
+            </div>
         </div>
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
-            </div>
+           자에게
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -829,10 +1006,12 @@
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
         <div class="social-links">
-            <a href="https://linkedin.com/in/sihle-mrulwa-149707187" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sihle-mrulwa-149707187" target="_blank" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <!-- Add other social links -->
+            <a href="https://github.com/SIRAMRULWA" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </section>
 
@@ -897,9 +1076,9 @@
         const contactForm = document.querySelector('.contact-form');
         contactForm.addEventListener('submit', e => {
             e.preventDefault();
-            alert('Form submitted! (This is a demo; integrate with a backend service.)');
+            alert('Form submitted! (Integrated with Formspree for actual functionality.)');
             contactForm.reset();
         });
     </script>
 </body>
-</html>
+                </html>
