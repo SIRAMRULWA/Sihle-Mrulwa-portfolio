@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sihle Mrulwa - Full Stack Developer</title>
+    <title>Sihle Mrulwa - Full Stack Developer & Cloud Consultant</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -417,8 +417,43 @@
             transform: translateY(-2px);
         }
 
-        .education {
+        .systems-built {
             background: #f8f9fa;
+        }
+
+        .systems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .system-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .system-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .system-card i {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .system-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .education {
+            background: white;
         }
 
         .education-card {
@@ -464,11 +499,17 @@
             padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
         }
 
         .contact-card i {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: white;
         }
 
         .social-links {
@@ -543,6 +584,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#systems">Systems</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -554,6 +596,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#systems">Systems</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -564,15 +607,16 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Sihle Mrulwa</h1>
-            <p class="subtitle">Full Stack Developer & AWS Cloud Practitioner</p>
+            <p class="subtitle">Full Stack Developer | AWS Cloud Practitioner Consultant & Trainer</p>
             <p class="description">
-                Passionate and results-driven Full Stack Developer with over two years of experience 
-                in crafting innovative web and mobile applications. Expert in C#, Java, JavaScript, 
-                and SQL Server, with a proven ability to deliver scalable, high-performance solutions.
+                Professional website builder and cloud solutions architect with expertise in developing custom web applications.
+                AWS Certified Cloud Practitioner Trainer specializing in cloud solutions. I build robust systems including
+                Recruitment Websites, Booking Applications, Driving School Management Systems, Hotel Reservation Platforms,
+                and Delivery Tracking Solutions.
             </p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#experience" class="btn btn-secondary">View My Work</a>
+                <a href="#systems" class="btn btn-secondary">View My Systems</a>
             </div>
         </div>
     </section>
@@ -587,16 +631,16 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Full Stack Developer</h3>
+                    <h3>Website Builder & Cloud Consultant</h3>
                     <p>
-                        I'm a passionate Full Stack Developer with expertise in building scalable web and mobile applications. 
-                        With a strong foundation in both frontend and backend technologies, I excel at creating seamless 
-                        user experiences backed by robust server-side solutions.
+                        I'm a professional Full Stack Developer and AWS Cloud Practitioner Consultant with extensive experience
+                        in building custom web applications and cloud solutions. As an AWS Certified Trainer, I help businesses
+                        and individuals transition to cloud computing with customized training programs.
                     </p>
                     <p>
-                        My journey in software development has equipped me with the skills to tackle complex challenges 
-                        creatively and deliver high-performance solutions that drive business success. I thrive in 
-                        dynamic, collaborative environments and am always eager to learn new technologies.
+                        My expertise includes developing complete systems for recruitment, booking management, driving schools,
+                        hotels, and delivery services. I combine technical skills with business understanding to create solutions
+                        that drive efficiency and growth for my clients.
                     </p>
                     <div class="contact-info">
                         <div class="contact-item">
@@ -622,52 +666,72 @@
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="job-title">Fullstack Engineer and AWS Cloud Practitioner</div>
+                    <div class="job-title">Fullstack Engineer and AWS Cloud Practitioner Trainer</div>
                     <div class="company">Forge Academy & Labs</div>
                     <div class="date-location">October 2024 • Randburg</div>
                     <ul class="achievements">
                         <li>Full Stack Development using Vue.js, Angular, C#, Java, and Spring Boot</li>
-                        <li>Database management with PostgreSQL, Mobile development and SQL Server</li>
-                        <li>Cloud deployment on AWS (EC2, S3, Lambda, RDS)</li>
-                        <li>Performance optimization and security enhancements</li>
+                        <li>AWS Cloud Practitioner training and certification preparation</li>
+                        <li>Cloud architecture design and implementation on AWS (EC2, S3, Lambda, RDS)</li>
+                        <li>Developed custom training materials for AWS cloud technologies</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="job-title">Full Stack Developer</div>
+                    <div class="job-title">Full Stack Developer & Cloud Consultant</div>
                     <div class="company">Digital Solution Foundry</div>
                     <div class="date-location">May 2024 - October 2024 • Johannesburg</div>
                     <ul class="achievements">
-                        <li>Developed and maintained over 5 high-performance applications using C#, Java, and SQL Server</li>
-                        <li>Implemented 10+ APIs and CRUD functionalities, improving system reliability by 30%</li>
-                        <li>Led mobile and web application development, increasing user engagement by 40%</li>
-                        <li>Collaborated with 8 developers to resolve technical issues, reducing bug resolution time by 20%</li>
-                        <li>Streamlined workflows, reducing deployment time by 20%</li>
+                        <li>Developed and maintained custom web applications including booking and management systems</li>
+                        <li>Implemented cloud solutions for clients migrating to AWS</li>
+                        <li>Led development of recruitment and hotel booking platforms</li>
+                        <li>Conducted AWS cloud workshops for client teams</li>
                     </ul>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="job-title">Android Developer Intern</div>
-                    <div class="company">Absa Group Limited</div>
-                    <div class="date-location">October 2023 - March 2024 • Johannesburg</div>
+                    <div class="job-title">AWS Cloud Practitioner Trainer</div>
+                    <div class="company">Freelance</div>
+                    <div class="date-location">2023 - Present</div>
                     <ul class="achievements">
-                        <li>Designed and implemented 5+ key features for Android applications</li>
-                        <li>Enhanced user experience and improved app ratings by 15%</li>
-                        <li>Collaborated with cross-functional teams to troubleshoot technical issues</li>
-                        <li>Conducted performance testing, leading to 20% decrease in crash rates</li>
+                        <li>Delivered AWS Cloud Practitioner training to individuals and corporate teams</li>
+                        <li>Created customized training programs based on client needs</li>
+                        <li>Helped over 50 students achieve AWS certification</li>
+                        <li>Developed practical cloud implementation strategies</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="timeline-item">
-                    <div class="job-title">Software Developer</div>
-                    <div class="company">Shaper</div>
-                    <div class="date-location">March 2022 - September 2023 • Johannesburg</div>
-                    <ul class="achievements">
-                        <li>Developed and optimized 4+ Android features, improving user retention by 18%</li>
-                        <li>Led Angular (TypeScript) web application development, reducing load times by 30%</li>
-                        <li>Built backend systems with Java Spring Boot for 10,000+ daily active users</li>
-                        <li>Developed 3+ iOS applications with Swift, boosting downloads by 25%</li>
-                    </ul>
+    <section id="systems" class="systems-built section">
+        <div class="section">
+            <h2 class="section-title">Systems I Build</h2>
+            <div class="systems-grid">
+                <div class="system-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Recruitment Website Systems</h4>
+                    <p>Complete applicant tracking and recruitment management platforms</p>
+                </div>
+                <div class="system-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Booking Appointment Systems</h4>
+                    <p>Custom scheduling solutions for businesses and service providers</p>
+                </div>
+                <div class="system-card">
+                    <i class="fas fa-car"></i>
+                    <h4>Driving School Systems</h4>
+                    <p>Comprehensive management platforms for driving schools</p>
+                </div>
+                <div class="system-card">
+                    <i class="fas fa-hotel"></i>
+                    <h4>Hotel Booking Systems</h4>
+                    <p>Custom reservation and property management applications</p>
+                </div>
+                <div class="system-card">
+                    <i class="fas fa-truck"></i>
+                    <h4>Delivery Systems</h4>
+                    <p>End-to-end delivery tracking and management solutions</p>
                 </div>
             </div>
         </div>
@@ -685,9 +749,6 @@
                         <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">Kotlin</span>
-                        <span class="skill-tag">PHP</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -695,17 +756,16 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Angular</span>
                         <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">HTML5/CSS3</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h4><i class="fas fa-server"></i> Backend Technologies</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">Java Spring Boot</span>
+                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">.NET Core</span>
                         <span class="skill-tag">RESTful APIs</span>
                     </div>
                 </div>
@@ -714,28 +774,26 @@
                     <div class="skill-tags">
                         <span class="skill-tag">SQL Server</span>
                         <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><i class="fas fa-mobile-alt"></i> Mobile Development</h4>
+                    <h4><i class="fas fa-cloud"></i> AWS Cloud</h4>
                     <div class="skill-tags">
-                        <span class="skill-tag">Android</span>
-                        <span class="skill-tag">iOS Development</span>
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">Kotlin</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">EC2</span>
                         <span class="skill-tag">S3</span>
                         <span class="skill-tag">Lambda</span>
                         <span class="skill-tag">RDS</span>
+                        <span class="skill-tag">IAM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-cogs"></i> DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitHub Actions</span>
                     </div>
                 </div>
             </div>
@@ -750,9 +808,9 @@
                 <div class="university">Walter Sisulu University</div>
                 <div class="date-location">2017 - 2020 • Mthatha, South Africa</div>
                 <br>
-                <div class="degree">Cloud Administrator And Cloud Practitioner</div>
-                <div class="university">Forge Academy</div>
-                <div class="date-location">Recent Certification</div>
+                <div class="degree">AWS Certified Cloud Practitioner</div>
+                <div class="university">Amazon Web Services</div>
+                <div class="date-location">Certified Trainer</div>
             </div>
         </div>
     </section>
@@ -761,11 +819,11 @@
         <div class="section">
             <h2 class="section-title">Let's Work Together</h2>
             <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">
-                Ready to bring your ideas to life? Let's discuss how we can create something amazing together.
+                Ready to build your custom system or need cloud consulting? Contact me today to discuss your project.
             </p>
             <div class="contact-grid">
                 <div class="contact-card">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone-alt"></i>
                     <h4>Phone</h4>
                     <p>+27 83 623 6469</p>
                 </div>
@@ -779,6 +837,11 @@
                     <h4>Location</h4>
                     <p>Johannesburg, South Africa</p>
                 </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Availability</h4>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                </div>
             </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/sihle-mrulwa-149707187" target="_blank">
@@ -789,6 +852,9 @@
                 </a>
                 <a href="mailto:mrulwasihle@gmail.com">
                     <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/27836236469" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
         </div>
@@ -850,7 +916,7 @@
         }, observerOptions);
 
         // Observe timeline items
-        document.querySelectorAll('.timeline-item').forEach(item => {
+        document.querySelectorAll('.timeline-item, .system-card').forEach(item => {
             item.style.opacity = '0';
             item.style.transform = 'translateY(30px)';
             item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
