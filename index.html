@@ -425,23 +425,40 @@
             font-size: 1rem;
         }
         
-/* Skills Section - Vertical List Style */
+/* Skills Card Styling */
+.skill-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: white;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card-header {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.skill-card-header i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
 .skill-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+    margin-top: 1rem;
 }
 
 .skill-item {
+    padding: 0.5rem 0;
     display: flex;
     align-items: center;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    transition: var(--transition);
-}
-
-.skill-item:last-child {
-    border-bottom: none;
+    transition: all 0.2s ease;
 }
 
 .skill-item:hover {
@@ -449,11 +466,12 @@
 }
 
 .skill-item i {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
 }
 
 .skill-item span {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--dark-color);
 }
@@ -1181,41 +1199,240 @@
                             <span>CloudFront</span>
                         </div>
                     </div>
+<!-- Skills Section -->
+<section id="skills" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
+        
+        <div class="row g-4">
+            <!-- Programming Languages Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-code me-3"></i>
+                            <h4 class="mb-0">Programming Languages</h4>
+                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Java</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>JavaScript</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>C#</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>TypeScript</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Python</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Swift</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Kotlin</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>PHP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend Technologies Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-desktop me-3"></i>
+                            <h4 class="mb-0">Frontend Technologies</h4>
+                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Angular</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Vue.js</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>React</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>HTML5/CSS3</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Bootstrap</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Tailwind CSS</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Technologies Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-server me-3"></i>
+                            <h4 class="mb-0">Backend Technologies</h4>
+                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Node.js</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Spring Boot</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>.NET Core</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>RESTful APIs</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>GraphQL</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Express.js</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Databases Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-database me-3"></i>
+                            <h4 class="mb-0">Databases</h4>
+                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>SQL Server</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>PostgreSQL</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>MongoDB</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>MySQL</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Firebase</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWS Cloud Card -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-cloud me-3"></i>
+                            <h4 class="mb-0">AWS Cloud</h4>
+                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>EC2</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>S3</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Lambda</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>RDS</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>IAM</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>CloudFront</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- DevOps & Tools Card -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
-                <div class="skill-card h-100">
-                    <div class="skill-card-header">
-                        <i class="fas fa-cogs"></i>
-                        <h4>DevOps & Tools</h4>
-                    </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>Docker</span>
+                <div class="card skill-card h-100">
+                    <div class="card-body">
+                        <div class="skill-card-header d-flex align-items-center mb-3">
+                            <i class="fas fa-cogs me-3"></i>
+                            <h4 class="mb-0">DevOps & Tools</h4>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>CI/CD</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>IBM SPSS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-caret-right text-primary me-2"></i>
-                            <span>JIRA</span>
-                        </div>
+                        <ul class="skill-list list-unstyled">
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Docker</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>CI/CD</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>Git</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>GitHub</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>IBM SPSS</span>
+                            </li>
+                            <li class="skill-item py-2">
+                                <i class="fas fa-caret-right text-primary me-2"></i>
+                                <span>JIRA</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
