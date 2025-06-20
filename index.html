@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sihle Mrulwa - Full Stack Developer & Cloud Consultant</title>
+    <meta name="description" content="Sihle Mrulwa - Full Stack Developer and AWS Cloud Consultant crafting innovative web solutions and cloud architectures.">
+    <meta name="keywords" content="Sihle Mrulwa, Full Stack Developer, AWS Cloud Consultant, Web Development, Cloud Solutions">
+    <title>Sihle Mrulwa - Full Stack Developer & Cloud Architect</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,30 +16,43 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.8;
-            color: #2d2d2d;
-            background: linear-gradient(135deg, #f0f2f5 0%, #e0e7ff 100%);
+            color: #1f2937;
+            background: #f9fafb;
             min-height: 100vh;
+            scroll-behavior: smooth;
         }
 
         /* Section Backgrounds */
         .hero {
-            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+            background: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.7)), url('https://images.unsplash.com/photo-1516321310762-6f3e7f6e0e33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
             position: relative;
             overflow: hidden;
         }
 
-        .about, .skills, .education {
+        .about {
             background: #ffffff;
         }
 
-        .experience, .systems-built {
-            background: #f8f9ff;
+        .experience {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1516321310762-6f3e7f6e0e33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+        }
+
+        .systems-built {
+            background: #f1f5f9;
+        }
+
+        .skills {
+            background: #ffffff;
+        }
+
+        .education {
+            background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1508830524289-0adcbe822b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
         }
 
         .contact {
-            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+            background: linear-gradient(rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
         }
 
         /* Navbar */
@@ -46,20 +61,19 @@
             top: 0;
             width: 100%;
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            padding: 1.2rem 0;
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .navbar.scrolled {
             background: rgba(255, 255, 255, 1);
-            transform: translateY(0);
         }
 
         .nav-container {
-            max-width: 1280px;
+            max-width: 1320px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -68,9 +82,10 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
             font-weight: 700;
-            color: #4b6cb7;
+            color: #3b82f6;
             letter-spacing: 1px;
         }
 
@@ -82,14 +97,14 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #2d2d2d;
-            font-weight: 500;
-            font-size: 1rem;
+            color: #1f2937;
+            font-weight: 600;
+            font-size: 1.1rem;
             transition: color 0.3s ease, transform 0.2s ease;
         }
 
         .nav-links a:hover {
-            color: #4b6cb7;
+            color: #3b82f6;
             transform: translateY(-2px);
         }
 
@@ -97,8 +112,8 @@
             display: none;
             background: none;
             border: none;
-            font-size: 1.8rem;
-            color: #2d2d2d;
+            font-size: 2rem;
+            color: #1f2937;
             cursor: pointer;
         }
 
@@ -109,9 +124,9 @@
             left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(10px);
             list-style: none;
-            padding: 1.5rem 2rem;
+            padding: 2rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             z-index: 999;
         }
@@ -121,19 +136,19 @@
         }
 
         .mobile-nav-links li {
-            margin: 1.2rem 0;
+            margin: 1.5rem 0;
         }
 
         .mobile-nav-links a {
             text-decoration: none;
-            color: #2d2d2d;
-            font-weight: 500;
-            font-size: 1.1rem;
+            color: #1f2937;
+            font-weight: 600;
+            font-size: 1.2rem;
             transition: color 0.3s ease;
         }
 
         .mobile-nav-links a:hover {
-            color: #4b6cb7;
+            color: #3b82f6;
         }
 
         /* Hero Section */
@@ -154,31 +169,32 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.15)"/></svg>') repeat;
-            animation: float 25s infinite linear;
-            opacity: 0.3;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="4" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 30s infinite linear;
+            opacity: 0.2;
         }
 
         @keyframes float {
             0% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(-150px) rotate(360deg); }
+            100% { transform: translateY(-200px) rotate(360deg); }
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 1000px;
             padding: 0 2rem;
             z-index: 2;
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 4.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             animation: fadeInUp 1s ease;
         }
 
         .hero .subtitle {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: 400;
             margin-bottom: 2rem;
             opacity: 0.9;
@@ -186,7 +202,7 @@
         }
 
         .hero .description {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 3rem;
             opacity: 0.85;
             animation: fadeInUp 1s ease 0.6s both;
@@ -201,10 +217,11 @@
         }
 
         .btn {
-            padding: 1rem 2.5rem;
+            padding: 1rem 3rem;
             border: none;
             border-radius: 50px;
-            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
             font-weight: 600;
             text-decoration: none;
             display: inline-block;
@@ -213,15 +230,15 @@
         }
 
         .btn-primary {
-            background: #4b6cb7;
+            background: #3b82f6;
             color: white;
-            box-shadow: 0 5px 15px rgba(75, 108, 183, 0.3);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
         }
 
         .btn-primary:hover {
-            background: #182848;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(75, 108, 183, 0.4);
+            background: #1e3a8a;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
         }
 
         .btn-secondary {
@@ -232,14 +249,14 @@
 
         .btn-secondary:hover {
             background: white;
-            color: #4b6cb7;
-            transform: translateY(-3px);
+            color: #3b82f6;
+            transform: translateY(-4px);
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(60px);
             }
             to {
                 opacity: 1;
@@ -249,30 +266,31 @@
 
         /* Sections */
         .section {
-            padding: 6rem 0;
-            max-width: 1280px;
+            padding: 7rem 0;
+            max-width: 1320px;
             margin: 0 auto;
             padding-left: 2rem;
             padding-right: 2rem;
         }
 
         .section-title {
-            font-size: 2.8rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
             font-weight: 700;
             text-align: center;
             margin-bottom: 4rem;
-            color: #2d2d2d;
+            color: #1f2937;
             position: relative;
         }
 
         .section-title::after {
             content: '';
             display: block;
-            width: 80px;
-            height: 4px;
-            background: #4b6cb7;
+            width: 100px;
+            height: 5px;
+            background: #3b82f6;
             margin: 1.5rem auto;
-            border-radius: 2px;
+            border-radius: 3px;
         }
 
         /* About Section */
@@ -285,7 +303,7 @@
         .about-content {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: 5rem;
+            gap: 6rem;
             align-items: center;
         }
 
@@ -294,60 +312,61 @@
         }
 
         .profile-img {
-            width: 280px;
-            height: 280px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #4b6cb7, #182848);
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 6rem;
             color: white;
             margin: 0 auto;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease;
         }
 
         .profile-img:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         .about-text h3 {
-            font-size: 2.2rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
-            color: #2d2d2d;
+            color: #1f2937;
         }
 
         .about-text p {
-            font-size: 1.15rem;
-            margin-bottom: 1.8rem;
-            color: #4a5568;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #4b5563;
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 2.5rem;
+            gap: 3rem;
             margin-top: 2rem;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            font-size: 1.1rem;
+            gap: 1rem;
+            font-size: 1.2rem;
         }
 
         .contact-item i {
-            color: #4b6cb7;
-            width: 24px;
+            color: #3b82f6;
+            width: 28px;
         }
 
         /* Experience Section */
         .timeline {
             position: relative;
-            padding-left: 2.5rem;
+            padding-left: 3rem;
         }
 
         .timeline::before {
@@ -356,56 +375,59 @@
             left: 0;
             top: 0;
             bottom: 0;
-            width: 3px;
-            background: #4b6cb7;
+            width: 4px;
+            background: #3b82f6;
             border-radius: 2px;
         }
 
         .timeline-item {
             position: relative;
-            margin-bottom: 3.5rem;
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-            margin-left: 2.5rem;
-            transition: transform 0.3s ease;
+            margin-bottom: 4rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-left: 3rem;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .timeline-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -3.2rem;
-            top: 2.5rem;
-            width: 16px;
-            height: 16px;
+            left: -3.5rem;
+            top: 3rem;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
-            background: #4b6cb7;
-            border: 3px solid white;
+            background: #3b82f6;
+            border: 4px solid white;
         }
 
         .job-title {
-            font-size: 1.7rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.9rem;
             font-weight: 700;
-            color: #2d2d2d;
+            color: #1f2937;
             margin-bottom: 0.8rem;
         }
 
         .company {
-            color: #4b6cb7;
+            color: #3b82f6;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 0.8rem;
         }
 
         .date-location {
-            color: #4a5568;
-            font-size: 1rem;
-            margin-bottom: 1.2rem;
+            color: #4b5563;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
         }
 
         .achievements {
@@ -413,117 +435,122 @@
         }
 
         .achievements li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.8rem;
+            margin-bottom: 1rem;
+            padding-left: 2rem;
             position: relative;
-            font-size: 1.05rem;
-            color: #4a5568;
+            font-size: 1.1rem;
+            color: #4b5563;
         }
 
         .achievements li::before {
             content: '▸';
             position: absolute;
             left: 0;
-            color: #4b6cb7;
+            color: #3b82f6;
             font-weight: bold;
         }
 
         /* Systems Built Section */
         .systems-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
         }
 
         .system-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .system-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
         .system-card i {
-            font-size: 3rem;
-            color: #4b6cb7;
+            font-size: 3.5rem;
+            color: #3b82f6;
             margin-bottom: 1.5rem;
         }
 
         .system-card h4 {
-            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.7rem;
             font-weight: 600;
-            margin-bottom: 0.8rem;
-            color: #2d2d2d;
+            margin-bottom: 1rem;
+            color: #1f2937;
         }
 
         .system-card p {
-            color: #4a5568;
-            font-size: 1rem;
+            color: #4b5563;
+            font-size: 1.1rem;
         }
 
         /* Skills Section */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 3.5rem;
         }
 
         .skill-category h4 {
-            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.7rem;
             font-weight: 600;
-            margin-bottom: 1.8rem;
-            color: #2d2d2d;
+            margin-bottom: 2rem;
+            color: #1f2937;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 1rem;
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
+            gap: 1rem;
         }
 
         .skill-tag {
-            background: #4b6cb7;
+            background: #3b82f6;
             color: white;
-            padding: 0.6rem 1.2rem;
-            border-radius: 25px;
-            font-size: 0.95rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-size: 1rem;
             font-weight: 500;
             transition: transform 0.3s ease, background 0.3s ease;
         }
 
         .skill-tag:hover {
-            background: #182848;
-            transform: translateY(-3px);
+            background: #1e3a8a;
+            transform: translateY(-4px);
         }
 
         /* Education Section */
         .education-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         .degree {
-            font-size: 1.7rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.9rem;
             font-weight: 700;
-            color: #2d2d2d;
+            color: #1f2937;
             margin-bottom: 1rem;
         }
 
         .university {
-            color: #4b6cb7;
-            font-size: 1.3rem;
+            color: #3b82f6;
+            font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 0.8rem;
         }
@@ -535,68 +562,69 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 3.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
         }
 
         .contact-card {
             background: rgba(255, 255, 255, 0.15);
-            padding: 2.5rem;
-            border-radius: 12px;
             backdrop-filter: blur(12px);
-            transition: transform 0.3s ease, background 0支3s ease;
+            padding: 3rem;
+            border-radius: 16px;
+            transition: transform 0.4s ease, background 0.4s ease;
         }
 
         .contact-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
         }
 
         .contact-card i {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1.5rem;
             color: white;
         }
 
         .contact-card h4 {
-            font-size: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.7rem;
             font-weight: 600;
             color: white;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
 
         .contact-card p {
             color: white;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             opacity: 0.9;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 3rem;
             margin-top: 3rem;
         }
 
         .social-links a {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.8rem;
-            transition: all 0.3s ease;
+            font-size: 2rem;
+            transition: all 0.4s ease;
         }
 
         .social-links a:hover {
             background: white;
-            color: #4b6cb7;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            color: #3b82f6;
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
         /* Responsive Design */
@@ -610,15 +638,15 @@
             }
 
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
 
             .hero .subtitle {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
 
             .hero .description {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
 
             .about-content {
@@ -629,51 +657,54 @@
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
-                gap: 1rem;
+                gap: 1.2rem;
             }
 
             .timeline {
-                padding-left: 1.5rem;
+                padding-left: 2rem;
             }
 
             .timeline-item {
-                margin-left: 1.5rem;
+                margin-left: 2rem;
                 padding: 2rem;
             }
 
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             .profile-img {
-                width: 220px;
-                height: 220px;
-                font-size: 4.5rem;
+                width: 240px;
+                height: 240px;
+                font-size: 5rem;
             }
         }
 
         @media (max-width: 480px) {
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             .hero .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             .btn {
-                padding: 0.8rem 2rem;
-                font-size: 0.9rem;
+                padding: 0.9rem 2.5rem;
+                font-size: 1rem;
             }
 
             .section {
-                padding: 4rem 1rem;
+                padding: 5rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- HTML content remains unchanged, only CSS and minor structural tweaks -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">SM</div>
@@ -704,16 +735,13 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Sihle Mrulwa</h1>
-            <p class="subtitle">Full Stack Developer | AWS Cloud Practitioner Consultant & Trainer</p>
+            <p class="subtitle">Full Stack Developer & AWS Cloud Architect</p>
             <p class="description">
-                Professional website builder and cloud solutions architect with expertise in developing custom web applications.
-                AWS Certified Cloud Practitioner Trainer specializing in cloud solutions. I build robust systems including
-                Recruitment Websites, Booking Applications, Driving School Management Systems, Hotel Reservation Platforms,
-                and Delivery Tracking Solutions.
+                I craft innovative web applications and cloud solutions that empower businesses. As an AWS Certified Cloud Practitioner and Trainer, I specialize in building scalable systems for recruitment, bookings, driving schools, hotels, and delivery services, driving efficiency and growth.
             </p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#systems" class="btn btn-secondary">View My Systems</a>
+                <a href="#contact" class="btn btn-primary">Connect With Me</a>
+                <a href="#systems" class="btn btn-secondary">Explore My Work</a>
             </div>
         </div>
     </section>
@@ -728,16 +756,12 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Website Builder & Cloud Consultant</h3>
+                    <h3>Innovative Developer & Cloud Expert</h3>
                     <p>
-                        I'm a professional Full Stack Developer and AWS Cloud Practitioner Consultant with extensive experience
-                        in building custom web applications and cloud solutions. As an AWS Certified Trainer, I help businesses
-                        and individuals transition to cloud computing with customized training programs.
+                        I'm a passionate Full Stack Developer and AWS Certified Cloud Consultant dedicated to creating cutting-edge web applications and cloud architectures. With a focus on delivering tailored solutions, I help businesses harness technology for growth and efficiency.
                     </p>
                     <p>
-                        My expertise includes developing complete systems for recruitment, booking management, driving schools,
-                        hotels, and delivery services. I combine technical skills with business understanding to create solutions
-                        that drive efficiency and growth for my clients.
+                        My expertise spans developing robust systems for recruitment, scheduling, driving schools, hospitality, and logistics. As an AWS Trainer, I empower teams with the knowledge to leverage cloud technologies effectively.
                     </p>
                     <div class="contact-info">
                         <div class="contact-item">
@@ -760,17 +784,17 @@
 
     <section id="experience" class="experience">
         <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title">Professional Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="job-title">Fullstack Engineer and AWS Cloud Practitioner Trainer</div>
-                    <div class="company">Forge Academy & Platform</div>
+                    <div class="job-title">Full Stack Engineer & AWS Trainer</div>
+                    <div class="company">Forge Academy & Labs</div>
                     <div class="date-location">October 2024 • Randburg</div>
                     <ul class="achievements">
-                        <li>Full Stack Development using Vue.js, Angular, C#, Java, and Spring Boot</li>
-                        <li>Database management with PostgreSQL, Mobile development and SQL Server</li>
-                        <li>Cloud deployment on AWS (EC2, S3, Lambda, RDS)</li>
-                        <li>Performance optimization and security enhancements</li>
+                        <li>Developed full-stack applications using Vue.js, Angular, C#, Java, and Spring Boot</li>
+                        <li>Managed databases with PostgreSQL and SQL Server, optimizing mobile solutions</li>
+                        <li>Deployed scalable cloud solutions on AWS (EC2, S3, Lambda, RDS)</li>
+                        <li>Enhanced system performance and security, reducing latency by 25%</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
@@ -778,11 +802,11 @@
                     <div class="company">Digital Solution Foundry</div>
                     <div class="date-location">May 2024 - October 2024 • Johannesburg</div>
                     <ul class="achievements">
-                        <li>Developed and maintained over 5 high-performance applications using C#, Java, and SQL Server</li>
-                        <li>Implemented 10+ APIs and CRUD functionalities, improving system reliability by 30%</li>
-                        <li>Led the design and development of mobile and web applications, increasing user engagement by 40%</li>
-                        <li>Collaborated with a team of 8 developers to resolve technical issues, reducing bug resolution time by 20%</li>
-                        <li>Streamlined workflows, resulting in a 20% reduction in deployment time</li>
+                        <li>Built and maintained 5+ high-performance applications using C#, Java, and SQL Server</li>
+                        <li>Developed 10+ APIs, boosting system reliability by 30%</li>
+                        <li>Led mobile and web app development, increasing user engagement by 40%</li>
+                        <li>Collaborated with a team of 8 to resolve issues, cutting bug resolution time by 20%</li>
+                        <li>Streamlined deployment workflows, reducing time by 20%</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
@@ -790,9 +814,9 @@
                     <div class="company">Absa Group Limited</div>
                     <div class="date-location">October 2023 - March 2024 • Johannesburg</div>
                     <ul class="achievements">
-                        <li>Designed and implemented 5+ key features for Android applications, improving app ratings by 15%</li>
-                        <li>Collaborated with cross-functional teams of 6+ developers to troubleshoot technical issues</li>
-                        <li>Conducted performance testing and optimization, leading to a 20% decrease in crash rates</li>
+                        <li>Designed 5+ Android app features, improving ratings by 15%</li>
+                        <li>Worked with cross-functional teams to troubleshoot issues</li>
+                        <li>Optimized performance, reducing crash rates by 20%</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
@@ -800,10 +824,10 @@
                     <div class="company">Shaper</div>
                     <div class="date-location">March 2022 - September 2023 • Johannesburg</div>
                     <ul class="achievements">
-                        <li>Developed and optimized 4+ Android features, increasing user retention by 18%</li>
-                        <li>Led the development of Angular (TypeScript) web applications, reducing load times by 30%</li>
-                        <li>Built and maintained backend systems using Java Spring Boot, scaling for 10,000+ daily active users</li>
-                        <li>Developed 3+ iOS applications with Swift, boosting app downloads by 25%</li>
+                        <li>Optimized 4+ Android features, boosting retention by 18%</li>
+                        <li>Developed Angular web apps, cutting load times by 30%</li>
+                        <li>Built scalable Java Spring Boot backends for 10,000+ users</li>
+                        <li>Created 3+ iOS apps with Swift, increasing downloads by 25%</li>
                     </ul>
                 </div>
                 <div class="timeline-item">
@@ -811,9 +835,9 @@
                     <div class="company">Galilee SPS</div>
                     <div class="date-location">August 2020 - January 2022 • Johannesburg</div>
                     <ul class="achievements">
-                        <li>Provided exceptional customer service to an average of 50+ clients daily</li>
-                        <li>Managed administrative tasks, increasing office efficiency by 15%</li>
-                        <li>Supported a team of 10+ professionals, ensuring smooth communication</li>
+                        <li>Delivered exceptional service to 50+ daily clients</li>
+                        <li>Streamlined administrative tasks, boosting efficiency by 15%</li>
+                        <li>Supported a team of 10+ for seamless communication</li>
                     </ul>
                 </div>
             </div>
@@ -822,32 +846,32 @@
 
     <section id="systems" class="systems-built section">
         <div class="section">
-            <h2 class="section-title">Systems I Build</h2>
+            <h2 class="section-title">Systems I Create</h2>
             <div class="systems-grid">
                 <div class="system-card">
                     <i class="fas fa-users"></i>
-                    <h4>Recruitment Website Systems</h4>
-                    <p>Complete applicant tracking and recruitment management platforms</p>
+                    <h4>Recruitment Platforms</h4>
+                    <p>Advanced applicant tracking and talent management systems</p>
                 </div>
                 <div class="system-card">
                     <i class="fas fa-calendar-check"></i>
-                    <h4>Booking Appointment Systems</h4>
-                    <p>Custom scheduling solutions for businesses and service providers</p>
+                    <h4>Booking Solutions</h4>
+                    <p>Custom scheduling platforms for seamless appointments</p>
                 </div>
                 <div class="system-card">
                     <i class="fas fa-car"></i>
                     <h4>Driving School Systems</h4>
-                    <p>Comprehensive management platforms for driving schools</p>
+                    <p>Comprehensive tools for driving school operations</p>
                 </div>
                 <div class="system-card">
                     <i class="fas fa-hotel"></i>
-                    <h4>Hotel Booking Systems</h4>
-                    <p>Custom reservation and property management applications</p>
+                    <h4>Hotel Reservation Systems</h4>
+                    <p>Streamlined booking and property management solutions</p>
                 </div>
                 <div class="system-card">
                     <i class="fas fa-truck"></i>
-                    <h4>Delivery Systems</h4>
-                    <p>End-to-end delivery tracking and management solutions</p>
+                    <h4>Delivery Platforms</h4>
+                    <p>End-to-end logistics and tracking systems</p>
                 </div>
             </div>
         </div>
@@ -855,7 +879,7 @@
 
     <section id="skills" class="skills">
         <div class="section">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h4><i class="fas fa-code"></i> Programming Languages</h4>
@@ -873,7 +897,6 @@
                 <div class="skill-category">
                     <h4><i class="fas fa-desktop"></i> Frontend Technologies</h4>
                     <div class="skill-tags">
-                        <span class="skill-tagទ.1
                         <span class="skill-tag">Angular</span>
                         <span class="skill-tag">Vue.js</span>
                         <span class="skill-tag">React</span>
@@ -923,13 +946,13 @@
 
     <section id="education" class="education">
         <div class="section">
-            <h2 class="section-title">Education & Training</h2>
+            <h2 class="section-title">Education & Certifications</h2>
             <div class="education-card">
-                <div class="degree">Bachelor of Science in Computer Science</div>
+                <div class="degree">BSc in Computer Science</div>
                 <div class="university">Walter Sisulu University</div>
                 <div class="date-location">2017 - 2020 • Mthatha, South Africa</div>
                 <br>
-                <div class="degree">Cloud Administrator And Cloud Practitioner</div>
+                <div class="degree">AWS Cloud Practitioner & Administrator</div>
                 <div class="university">Forge Academy</div>
             </div>
         </div>
@@ -937,9 +960,9 @@
 
     <section id="contact" class="contact">
         <div class="section">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">
-                Ready to build your custom system or need cloud consulting? Contact me today to discuss your project.
+            <h2 class="section-title">Let's Collaborate</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 3rem; color: white; opacity: 0.9;">
+                Ready to build innovative systems or leverage cloud technology? Reach out to discuss your vision.
             </p>
             <div class="contact-grid">
                 <div class="contact-card">
@@ -964,16 +987,16 @@
                 </div>
             </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/sihle-mrulwa-149707187" target="_blank">
+                <a href="https://www.linkedin.com/in/sihle-mrulwa-149707187" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/SIRAMRULWA" target="_blank">
+                <a href="https://github.com/SIRAMRULWA" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:mrulwasihle@gmail.com">
+                <a href="mailto:mrulwasihle@gmail.com" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://wa.me/27836236469" target="_blank">
+                <a href="https://wa.me/27836236469" target="_blank" aria-label="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
@@ -1034,22 +1057,22 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.timeline-item, .system-card').forEach(item => {
+        document.querySelectorAll('.timeline-item, .system-card, .education-card').forEach(item => {
             item.style.opacity = '0';
-            item.style.transform = 'translateY(30px)';
-            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            item.style.transform = 'translateY(40px)';
+            item.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
             observer.observe(item);
         });
 
         // Skill tags hover effect
         document.querySelectorAll('.skill-tag').forEach(tag => {
             tag.addEventListener('mouseenter', function() {
-                this.style.background = '#182848';
+                this.style.background = '#1e3a8a';
             });
             tag.addEventListener('mouseleave', function() {
-                this.style.background = '#4b6cb7';
+                this.style.background = '#3b82f6';
             });
         });
     </script>
 </body>
-    </html>
+</html>
